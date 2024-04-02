@@ -17,7 +17,7 @@ export function AttendeeList() {
         <div className="flex w-72 items-center gap-3 rounded-lg border border-white/10 px-3 py-1.5 text-sm ">
           <Search className="size-4 text-emerald-300" />
           <input
-            className="flex-1 border-0 border-none bg-transparent p-0 text-sm outline-none"
+            className="flex-1 border-0 bg-transparent p-0 text-sm outline-none focus:ring-0"
             placeholder="Buscar participante..."
           />
         </div>
@@ -32,7 +32,7 @@ export function AttendeeList() {
               >
                 <input
                   type="checkbox"
-                  className="size-4 rounded border border-white/10 bg-black/20 text-orange-400"
+                  className="size-4 cursor-pointer rounded border border-white/10 bg-black/20 checked:text-orange-400 focus:ring-0 focus:ring-offset-0"
                 />
               </th>
               <th className="px-4 py-3 text-left text-sm font-semibold">
@@ -63,7 +63,7 @@ export function AttendeeList() {
                   <td className="px-4 py-3 text-sm text-zinc-300">
                     <input
                       type="checkbox"
-                      className="size-4 rounded border border-white/10 bg-black/20 text-orange-400 focus:outline-orange-300"
+                      className="size-4 cursor-pointer rounded border border-white/10 bg-black/20 checked:text-orange-400 focus:ring-0 focus:ring-offset-0"
                     />
                   </td>
                   <td className="px-4 py-3 text-sm text-zinc-300">123456</td>
